@@ -28,12 +28,30 @@ Os alunos devem:
     "description": "Estudar blockchain"
 }` 
 
+usando o cartesi send:
+
+cartesi send generic \
+    --dapp=0xab7528bb862fB57E8A2BCd567a2e929a0Be56a5e \
+    --chain-id=31337 \
+    --rpc-url=http://127.0.0.1:8545 \
+    --mnemonic-passphrase='test test test test test test test test test test test junk' \
+    --input="{"action": "create","id": "1","description": "Estudar blockchain"}"
+
 ### Listar Tarefas
 
 
 `{
     "action": "list"
 }` 
+
+usando o cartesi send:
+
+cartesi send generic \
+    --dapp=0xab7528bb862fB57E8A2BCd567a2e929a0Be56a5e \
+    --chain-id=31337 \
+    --rpc-url=http://127.0.0.1:8545 \
+    --mnemonic-passphrase='test test test test test test test test test test test junk' \
+    --input="{"action": "list"}"
 
 ### Deletar Tarefa
 
@@ -43,12 +61,29 @@ Os alunos devem:
     "id": "1"
 }` 
 
+usando o cartesi send:
+
+cartesi send generic \
+    --dapp=0xab7528bb862fB57E8A2BCd567a2e929a0Be56a5e \
+    --chain-id=31337 \
+    --rpc-url=http://127.0.0.1:8545 \
+    --mnemonic-passphrase='test test test test test test test test test test test junk' \
+    --input="{"action": "delete","id": "1"}"
 ### Ação Inválida
 
 
 `{
     "action": "invalid_action"
 }` 
+
+usando o cartesi send:
+
+cartesi send generic \
+    --dapp=0xab7528bb862fB57E8A2BCd567a2e929a0Be56a5e \
+    --chain-id=31337 \
+    --rpc-url=http://127.0.0.1:8545 \
+    --mnemonic-passphrase='test test test test test test test test test test test junk' \
+    --input="{"action": "invalid_action"}"
 
 ## JSONs de Resposta
 
